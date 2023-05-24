@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a href="#" class="navbar-brand">River Store</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navb">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div id="navb" class="navbar-collapse collapse-hide">
+    <ul class="navbar-nav ms-auto">
+        {% if user.is_authenticated %}
+        <li class="navbar-item"><a href="{% url 'logout' %}" class="nav-link"><span class="fas fa-sign-out-alt"></span>Salir</a></li>
+        {% else %}
+        <li class="navbar-item"><a href="{% url 'login' %}" class="nav-link"><span class="fas fa-sign-in-alt"></span>Entrar</a></li>
+        <li class="navbar-item"><a href="{% url 'register' %}" class="nav-link"><span class="fas fa-user-plus"></span>Registro</a></li>
+        {% endif %}
+    </ul>
+  </div>
+  </div>
+</nav>
