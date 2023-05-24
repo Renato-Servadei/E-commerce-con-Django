@@ -4,15 +4,15 @@ from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 from .forms import RegisterForm
 
-def index(request):
-    return render(request, 'index.html', 
-                  { 'message': 'Bienvienido a la tienda', 
-                   'title': 'Listado de Productos', 
-                   'products': [
-                       {'title': 'remera', 'price': 5000, 'stock': True},
-                       {'title': 'campera', 'price': 15000, 'stock': True},
-                       {'title': 'pantalon', 'price': 4000, 'stock': False}                                              
-                   ]})
+# def index(request):
+#     return render(request, 'index.html', 
+#                   { 'message': 'Bienvienido a la tienda', 
+#                    'title': 'Listado de Productos', 
+#                    'products': [
+#                        {'title': 'remera', 'price': 5000, 'stock': True},
+#                        {'title': 'campera', 'price': 15000, 'stock': True},
+#                        {'title': 'pantalon', 'price': 4000, 'stock': False}                                              
+#                    ]})
 
 def login_view(request):
     if request.user.is_authenticated:
