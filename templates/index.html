@@ -1,21 +1,12 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 <div class="col">
-  <h1>{{ message }}</h1>
-  <ul class="list-group">
+  <h4 class="text-center">{{ message }}</h4>
+  <div class="row">
     {% for product in products %}
-    <li class="list-group-item">
-      {{ product.title }}
-      ${{ product.price}}
-      <!-- <a href="{% url 'product' product.slug %}">Ver detalle</a> -->
-      <!-- <span>
-        {% if product.stock %}
-        <span class="text-success">Disponible</span>
-        {% else %}
-        <span class="text-danger">No Disponible</span>
-        {% endif %}
-      </span> -->
-    </li>
+    <div class="col-3 mt-5">
+      {% include 'products/snippets/product.html' %}
+    </div>
     {% endfor %}
-  </ul>
+  </div>
 </div>
 {% endblock %}
