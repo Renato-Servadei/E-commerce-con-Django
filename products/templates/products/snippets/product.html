@@ -4,7 +4,7 @@
     {% endif %}
     <div class="card-body">
       <h5 class="card-title">
-        {{ product.title }}
+        {{ product.title | truncatechars:35 }}
       </h5>
       <p class="card-text">
         {{ product.description | truncatechars:45 }}
