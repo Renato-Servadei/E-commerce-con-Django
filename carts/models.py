@@ -15,4 +15,4 @@ class Carts(models.Model):
         
         
     def __str__(self):
-        return ''
+        return f'Carrito de {self.user} '
