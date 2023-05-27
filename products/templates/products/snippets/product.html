@@ -9,6 +9,6 @@
       <p class="card-text">
         {{ product.description | truncatechars:45 }}
       </p>
-      <a href="{% url 'product' product.slug %}" class="btn btn-primary">Ver detalle</a>
+      <a href="{% url 'products:product' product.slug %}" class="btn btn-primary">Ver detalle</a>
     </div>
   </div>
