@@ -1,5 +1,4 @@
-from typing import Any
-from django.db.models.query import QuerySet
+from django.db.models.query import Q
 from django.views.generic import ListView, DetailView
 from django.shortcuts import render
 from .models import Product
@@ -25,7 +24,8 @@ class ProductSearchListView(ListView):
     context_object_name = 'products'
 
     def get_queryset(self):
-        return Product.objects.filter(title__icontains = self.query())
+        filters = Q(title__icontains = self.query()) | Q(category__title__icontains = self.query())
+        return Product.objects.filter(filters).distinct() #agregué distinct para evitar que me devuelva dos veces el mismo producto
     
     def query(self):
         return self.request.GET.get('q')
