@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'products.apps.ProductsConfig',
     'category.apps.CategoryConfig',
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
@@ -70,6 +71,9 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+#User Model
+AUTH_USER_MODEL = 'users.User'
 
 
 # Password validation

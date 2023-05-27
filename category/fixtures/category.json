@@ -1,0 +1,56 @@
+[
+{
+    "model": "category.category",
+    "pk": 1,
+    "fields": {
+        "title": "Casacas",
+        "description": "camisetas",
+        "created_at": "2023-05-27T02:23:48.715Z",
+        "product": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "category.category",
+    "pk": 2,
+    "fields": {
+        "title": "Pantalones",
+        "description": "shorts, pantalones largos",
+        "created_at": "2023-05-27T02:24:13.777Z",
+        "product": [
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "category.category",
+    "pk": 3,
+    "fields": {
+        "title": "Calzado",
+        "description": "botines, zapatillas, chancletas",
+        "created_at": "2023-05-27T02:24:25.743Z",
+        "product": [
+            5
+        ]
+    }
+},
+{
+    "model": "category.category",
+    "pk": 4,
+    "fields": {
+        "title": "Futbol",
+        "description": "Futbol",
+        "created_at": "2023-05-27T02:24:43.620Z",
+        "product": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    }
+}
+]

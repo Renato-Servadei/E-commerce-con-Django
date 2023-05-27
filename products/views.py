@@ -1,6 +1,5 @@
 from django.db.models.query import Q
 from django.views.generic import ListView, DetailView
-from django.shortcuts import render
 from .models import Product
 
 class ProductListView(ListView):

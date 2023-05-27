@@ -1,6 +1,7 @@
 from typing import Any, Dict
 from django import forms
-from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
+from users.models import User
 
 class RegisterForm(forms.Form):
     username = forms.CharField(required=True, max_length=50, min_length=4, label='Nombre de usuario',
