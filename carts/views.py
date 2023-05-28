@@ -7,7 +7,7 @@ def cart(request):
     
     cart = get_or_create_cart(request)
 
-    return render(request, 'carts/cart.html', {})
+    return render(request, 'carts/cart.html', {'cart': cart})
 
 def add(request):
 
