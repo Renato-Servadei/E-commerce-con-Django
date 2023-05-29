@@ -30,6 +30,9 @@ class Cart(models.Model):
         self.total = self.subtotal + (self.subtotal * decimal.Decimal(Cart.FEE))
         self.save()
 
+    def products_related(self):
+        return self.cartproducts_set.select_related('product')
+
 class CartProducts(models.Model):
     cart = models.ForeignKey(Cart, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
@@ -46,3 +49,4 @@ def update_totals(instance, sender, action, *args, **kwargs):
 
 pre_save.connect(set_cart_id, sender=Cart)
 m2m_changed.connect(update_totals, sender=Cart.products.through)
+
