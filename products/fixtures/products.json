@@ -4,23 +4,23 @@
     "pk": 1,
     "fields": {
         "title": "CAMISETA TITULAR AUTHENTIC RIVER PLATE 22/23 MASC",
-        "description": "La nueva camiseta de juego de River Plate, hecha con materiales reciclados\r\n\r\nLa evoluci≤n de un φcono. Esta camiseta de juego cuenta con un dinßmico estampado dentro de su clßsica banda roja. La tecnologφa HEAT.RDY y los paneles de malla se encargan de brindarte la comodidad que necesitßs en el partido.\r\n\r\n\r\nò Corte clßsico\r\nò Cuello polo en V acanalado\r\nò Tejido de punto doble 100 % poliΘster reciclado\r\nò HEAT.RDY\r\nò Dobladillo curvo en el frente y la espalda\r\nò Escudo de River Plate termotransferido\r\nò Inscripci≤n \"GRANDEZA\" en la nuca\r\nò Importante: Los productos personalizados, no poseen cambios.",
+        "description": "La nueva camiseta de River Plate\r\n\r\nLa evoluci├│n de un ├¡cono. Esta camiseta cuenta con un din├ímico estampado dentro de su cl├ísica banda roja. El tejido absorbente AEROREADY y los paneles en la malla se encargan de mantenerte c├│modo.\r\n\r\nHecho con materiales 100% reciclados, este producto representa solo una de nuestras soluciones para acabar con los residuos pl├ísticos.\r\n\r\n\r\n- Ajuste cl├ísico\r\n- Cuello en V acanalado\r\n- Tejido entrelazado 100 % poli├⌐ster reciclado\r\n- Tecnolog├¡a de absorci├│n AEROREADY\r\n- Paneles de malla bajo los brazos\r\n- Escudo del River Plate tejido\r\n- Inscripci├│n \"GRANDEZA\" en la nuca\r\n- Importante: Los productos personalizados, no poseen cambios.",
         "price": "34999.00",
         "slug": "camiseta-titular-hombre",
         "image": "products/camiseta_authentic_titular_hombre.jpg",
-        "created": "2023-05-24T21:49:59.386Z"
+        "created_at": "2023-05-24T21:49:59.386Z"
     }
 },
 {
     "model": "products.product",
     "pk": 2,
     "fields": {
-        "title": "CAMISETA TITULAR RIVER PLATE 22/23 NI╤O",
-        "description": "La nueva camiseta de River Plate\r\n\r\nLa evoluci≤n de un φcono. Esta camiseta cuenta con un dinßmico estampado dentro de su clßsica banda roja. El tejido absorbente AEROREADY y los paneles en la malla se encargan de mantenerte c≤modo.\r\n\r\nHecho con materiales 100% reciclados, este producto representa solo una de nuestras soluciones para acabar con los residuos plßsticos.\r\n\r\n\r\nò Ajuste clßsico\r\nò Cuello en V acanalado\r\nò Tejido entrelazado 100 % poliΘster reciclado\r\nò Tecnologφa de absorci≤n AEROREADY\r\nò Paneles de malla bajo los brazos\r\nò Escudo del River Plate tejido\r\nò Inscripci≤n \"GRANDEZA\" en la nuca\r\nò Importante: Los productos personalizados, no poseen cambios.",
+        "title": "CAMISETA TITULAR RIVER PLATE 22/23 NI├æO",
+        "description": "La nueva camiseta de River Plate\r\n\r\nLa evolución de un ├¡cono. Esta camiseta cuenta con un din├ímico estampado dentro de su cl├ísica banda roja. El tejido absorbente AEROREADY y los paneles en la malla se encargan de mantenerte c├│modo.\r\n\r\nHecho con materiales 100% reciclados, este producto representa solo una de nuestras soluciones para acabar con los residuos pl├ísticos.\r\n\r\n\r\n- Ajuste cl├ísico\r\n- Cuello en V acanalado\r\n- Tejido entrelazado 100 % poli├⌐ster reciclado\r\n- Tecnolog├¡a de absorci├│n AEROREADY\r\n- Paneles de malla bajo los brazos\r\n- Escudo del River Plate tejido\r\n- Inscripci├│n \"GRANDEZA\" en la nuca\r\n- Importante: Los productos personalizados, no poseen cambios.",
         "price": "19999.00",
         "slug": "camiseta-titular-ninio",
         "image": "products/camiseta_ninio.jpg",
-        "created": "2023-05-24T21:52:19.840Z"
+        "created_at": "2023-05-24T21:52:19.840Z"
     }
 },
 {
@@ -28,11 +28,11 @@
     "pk": 3,
     "fields": {
         "title": "SHORTS DE DESCANSO RIVER PLATE CONDIVO 22",
-        "description": "Shorts c≤modos de River Plate para los momentos fuera de la cancha, hechos con materiales reciclados\r\n\r\nFieles al estilo de River Plate, estos shorts de f·tbol adidas lucen los clßsicos colores del club. Ofrecen un look futbolero distintivo pero con la comodidad que necesitßs para los momentos fuera de la cancha. El bolsillo cargo integrado mantiene tu billetera o llaves seguros y a la mano sin da±ar la silueta. La tecnologφa de absorci≤n AEROREADY mantiene tu cuerpo seco mientras apoyßs a tu equipo. Hecho con materiales 100% reciclados, este producto representa solo una de nuestras soluciones para acabar con los residuos plßsticos.\r\n\r\n\r\nò Ajuste clßsico\r\nò Cintura elßstica de tiro medio con cord≤n regulable\r\nò Tejido plano 100 % poliΘster reciclado\r\nò Tecnologφa de absorci≤n AEROREADY\r\nò Bolsillos frontales con cierre\r\nò Bolsillo cargo integrado\r\nò Escudo de River Plate CARP tejido",
+        "description": "Shorts c├│modos de River Plate para los momentos fuera de la cancha, hechos con materiales reciclados\r\n\r\nFieles al estilo de River Plate, estos shorts de f├║tbol adidas lucen los cl├ísicos colores del club. Ofrecen un look futbolero distintivo pero con la comodidad que necesit├ís para los momentos fuera de la cancha. El bolsillo cargo integrado mantiene tu billetera o llaves seguros y a la mano sin da├▒ar la silueta. La tecnolog├¡a de absorci├│n AEROREADY mantiene tu cuerpo seco mientras apoy├ís a tu equipo. Hecho con materiales 100% reciclados, este producto representa solo una de nuestras soluciones para acabar con los residuos pl├ísticos.\r\n\r\n\r\n- Ajuste cl├ísico\r\n- Cintura el├ística de tiro medio con cord├│n regulable\r\n- Tejido plano 100 % poli├⌐ster reciclado\r\n- Tecnolog├¡a de absorci├│n AEROREADY\r\n- Bolsillos frontales con cierre\r\n- Bolsillo cargo integrado\r\n- Escudo de River Plate CARP tejido",
         "price": "17999.00",
         "slug": "shorts-de-descanso-river-plate-condivo-22",
         "image": "products/short_descanso.jpg",
-        "created": "2023-05-26T14:39:24.449Z"
+        "created_at": "2023-05-26T14:39:24.449Z"
     }
 },
 {
@@ -40,23 +40,23 @@
     "pk": 4,
     "fields": {
         "title": "SHORTS ALTERNATIVA RIVER PLATE 22/23",
-        "description": "Short de River Plate con un dise±o retro, hecho con materiales reciclados\r\n\r\nRindiendo homenaje a las leyendas del pasado, estos shorts son parte del uniforme alternativo de River Plate. Tomamos el llamativo color rojo usado en 1986 y lo actualizamos. Paneles de malla favorecen la ventilaci≤n y los cortes laterales te permiten moverte con fluidez. La tecnologφa de absorci≤n AEROREADY mantiene tu piel seca dentro y fuera de la cancha.\r\n\r\n\r\nò Ajuste clßsico\r\nò Cintura elßstica de tiro medio con cord≤n regulable\r\nò Tejido entrelazado 100 % poliΘster reciclado\r\nò Tejido entrelazado 100 % poliΘster reciclado\r\nò\r\nò Tecnologφa de absorci≤n AEROREADY\r\nò Panel de ventilaci≤n en malla\r\nò Dobladillo recto con cortes laterales\r\nò Escudo de River Plate tejido",
+        "description": "Short de River Plate con un dise├▒o retro, hecho con materiales reciclados\r\n\r\nRindiendo homenaje a las leyendas del pasado, estos shorts son parte del uniforme alternativo de River Plate. Tomamos el llamativo color rojo usado en 1986 y lo actualizamos. Paneles de malla favorecen la ventilaci├│n y los cortes laterales te permiten moverte con fluidez. La tecnolog├¡a de absorci├│n AEROREADY mantiene tu piel seca dentro y fuera de la cancha.\r\n\r\n\r\n- Ajuste cl├ísico\r\n- Cintura el├ística de tiro medio con cord├│n regulable\r\n- Tejido entrelazado 100 % poli├⌐ster reciclado\r\n- Tejido entrelazado 100 % poli├⌐ster reciclado\r\n\r\n- Tecnolog├¡a de absorci├│n AEROREADY\r\n- Panel de ventilaci├│n en malla\r\n- Dobladillo recto con cortes laterales\r\n- Escudo de River Plate tejido",
         "price": "12999.00",
         "slug": "shorts-alternativa-river-plate-2223",
         "image": "products/short_alternativa.jpg",
-        "created": "2023-05-26T15:00:37.550Z"
+        "created_at": "2023-05-26T15:00:37.550Z"
     }
 },
 {
     "model": "products.product",
     "pk": 5,
     "fields": {
-        "title": "BOTINES GOLETTO VIII PASTO SINT╔TICO",
-        "description": "No importa si los estßs atacando o defendiendo, el futbol se trata de goles. Estos botines adidas Goletto VIII lucen un exterior sintΘtico moderno que incorpora puntadas en antepiΘ para un mayor control y un c≤modo acolchado en el tal≤n. La suela de caucho con tapones se adhiere al pasto sintΘtico para ayudarte a brillar.\r\n\r\nòHechos parcialmente con contenido reciclado generado a partir de desechos de producci≤n, tales como recortes de tela y desechos domΘsticos postconsumo, para evitar un mayor impacto ambiental.\r\n\r\nòHorma clßsica\r\n\r\nòSistema de atado de cordones\r\n\r\nòExterior sintΘtico suave\r\n\r\nòSuela de caucho optimizada para pasto sintΘtico",
+        "title": "BOTINES GOLETTO VIII PASTO SINT├ëTICO",
+        "description": "No importa si los est├ís atacando o defendiendo, el futbol se trata de goles. Estos botines adidas Goletto VIII lucen un exterior sint├⌐tico moderno que incorpora puntadas en antepi├⌐ para un mayor control y un c├│modo acolchado en el tal├│n. La suela de caucho con tapones se adhiere al pasto sint├⌐tico para ayudarte a brillar.\r\n\r\n-Hechos parcialmente con contenido reciclado generado a partir de desechos de producci├│n, tales como recortes de tela y desechos dom├⌐sticos postconsumo, para evitar un mayor impacto ambiental.\r\n\r\n-Horma cl├ísica\r\n\r\n-Sistema de atado de cordones\r\n\r\n-Exterior sint├⌐tico suave\r\n\r\n-Suela de caucho optimizada para pasto sint├⌐tico",
         "price": "24999.00",
         "slug": "botines-goletto-viii-pasto-sintetico",
         "image": "products/botines_goletto_g64uACZ.jpg",
-        "created": "2023-05-26T18:12:52.475Z"
+        "created_at": "2023-05-26T18:12:52.475Z"
     }
 }
 ]
