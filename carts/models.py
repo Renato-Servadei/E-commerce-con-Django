@@ -22,9 +22,8 @@ class Cart(models.Model):
         self.update_subtotal()
         self.update_total()
 
-        order = self.order_set.first()
-        if order:
-            order.update_total()
+        if self.order:
+            self.order.update_total()
 
 
     def update_subtotal(self):
@@ -43,6 +42,10 @@ class Cart(models.Model):
 
     def products_related(self):
         return self.cartproducts_set.select_related('product')
+    
+    @property
+    def order(self):
+        return self.order_set.first()
 
 class CartProductsManager(models.Manager):
     #con esta clase obtnemos o creamos un objeto cart. si ya esta creado se actualiza la cantida del product
