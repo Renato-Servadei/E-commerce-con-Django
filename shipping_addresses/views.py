@@ -1,8 +1,12 @@
+from typing import Any
+from django import http
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.shortcuts import render, redirect
-from django.views.generic import ListView
+from django.contrib.messages.views import SuccessMessageMixin
+from django.http.response import HttpResponse
+from django.shortcuts import render, redirect, reverse
+from django.views.generic import ListView, UpdateView
 from .forms import ShippingAddressForm
 from .models import ShippingAddress
 
@@ -14,7 +18,22 @@ class ShippingAddressListView(LoginRequiredMixin, ListView):
 
     def get_queryset(self):
         return ShippingAddress.objects.filter(user=self.request.user).order_by('-default')
-# Create your views here.
+
+class ShippingAddressUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
+    login_url = 'login'
+    model = ShippingAddress
+    form_class = ShippingAddressForm
+    template_name = 'shipping_addresses/update.html'
+    success_message = "Dirección actualizada correctamente"
+
+    def get_success_url(self):
+        return reverse('shipping_addresses:shipping_addresses')
+    
+    #para evitar que otros usuarios editen direcciones ajenas
+    def dispatch(self, request, *args, **kwargs):
+        if request.user.id != self.get_object().user_id:
+            return redirect('carts:cart')
+        return super(ShippingAddressUpdateView, self).dispatch(request, *args, **kwargs)
 
 @login_required(login_url='login')
 def create(request):
