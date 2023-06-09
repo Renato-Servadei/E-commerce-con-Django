@@ -1,15 +1,17 @@
-<form method="post">
-    {% csrf_token %}
-    {% for field in form %}
-    <div class="form-group">
-        
-        {{ field.label_tag }} 
-        {{ field }} 
-        
-      {% if field.errors %} 
-      {{ field.errors }}
-      {% endif %}
-    </div>
-    {% endfor %}
-    <button type="submit" class="btn btn-primary">Agregar dirección</button>
-  </form>
+<div class="mb-3">
+    <form method="post">
+        {% csrf_token %}
+        {% for field in form %}
+        <div class="form-group">
+            
+            {{ field.label_tag }} 
+            {{ field }} 
+            
+          {% if field.errors %} 
+          {{ field.errors }}
+          {% endif %}
+        </div>
+        {% endfor %}
+        <button type="submit" class="btn btn-primary mt-2">Agregar</button>
+      </form>
+</div>

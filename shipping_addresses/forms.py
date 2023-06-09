@@ -11,6 +11,15 @@ class ShippingAddressForm(ModelForm):
         fields=[
             'line1', 'line2','city', 'state', 'country', 'postal_code', 'reference'
         ]
+        labels = {
+            'line1': 'Calle 1', 
+            'line2' : 'Calle 2',
+            'city': 'Ciudad', 
+            'state': 'Provincia',
+            'country': 'País', 
+            'postal_code': 'Código Postal', 
+            'reference': 'Referencia'
+        }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -32,6 +41,7 @@ class ShippingAddressForm(ModelForm):
         })
         self.fields['postal_code'].widget.attrs.update({
             'class': 'form-control',
+            'placeholder': 'C1431HTD'
         })
         self.fields['reference'].widget.attrs.update({
             'class': 'form-control',
