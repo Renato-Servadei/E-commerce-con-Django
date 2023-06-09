@@ -15,10 +15,12 @@
         </a>
       </li>
       <li class="nav-item">
+        {% if user.is_authenticated %}
         <a href="{{ shipping_addresses }}" class="nav-link {% if request.path == shipping_addresses %}active{% endif %}">
           Mis direcciones
         <span class="fas fa-location-arrow"></span>
         </a>
+        {% endif %}
       </li>
     </ul>
     <ul class="navbar-nav ms-auto">
