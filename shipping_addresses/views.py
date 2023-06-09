@@ -5,8 +5,9 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
 from django.http.response import HttpResponse
-from django.shortcuts import render, redirect, reverse
-from django.views.generic import ListView, UpdateView
+from django.shortcuts import render, redirect
+from django.urls import reverse_lazy, reverse
+from django.views.generic import ListView, UpdateView, DeleteView
 from .forms import ShippingAddressForm
 from .models import ShippingAddress
 
@@ -34,6 +35,22 @@ class ShippingAddressUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateV
         if request.user.id != self.get_object().user_id:
             return redirect('carts:cart')
         return super(ShippingAddressUpdateView, self).dispatch(request, *args, **kwargs)
+
+class ShippingAddressDeleteView(LoginRequiredMixin, SuccessMessageMixin, DeleteView):
+    login_url = 'login'
+    model = ShippingAddress
+    template_name = 'shipping_addresses/delete.html'
+    #success_message = "Dirección actualizada correctamente"
+    success_url = reverse_lazy('shipping_addresses:shipping_addresses')
+
+    
+    def dispatch(self, request, *args, **kwargs):
+        #esto es para que no se pueda eliminar la direccion principal
+        if self.get_object().default:
+            return redirect('shipping_addresses:shipping_addresses')
+        if request.user.id != self.get_object().user_id:
+            return redirect('carts:cart')
+        return super(ShippingAddressDeleteView, self).dispatch(request, *args, **kwargs)
 
 @login_required(login_url='login')
 def create(request):
