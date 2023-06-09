@@ -1,4 +1,5 @@
 {% url 'carts:cart' as cart %}
+{% url 'shipping_addresses:shipping_addresses' as shipping_addresses %}
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
   <div class="container-fluid">
     <a href="{% url 'index' %}" class="navbar-brand">River Store</a>
@@ -11,6 +12,12 @@
         <a href="{{ cart }}" class="nav-link {% if request.path == cart %}active{% endif %}">
           Mi carrito
         <span class="fas fa-shopping-cart"></span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{{ shipping_addresses }}" class="nav-link {% if request.path == shipping_addresses %}active{% endif %}">
+          Mis direcciones
+        <span class="fas fa-location-arrow"></span>
         </a>
       </li>
     </ul>

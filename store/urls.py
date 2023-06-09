@@ -9,6 +9,7 @@ urlpatterns = [
     path('', ProductListView.as_view(), name='index'),
     path('admin/', admin.site.urls),
     path('carrito/', include('carts.urls')),
+    path('direcciones/', include('shipping_addresses.urls')),
     path('orden/', include('orders.urls')),
     path('productos/', include('products.urls')),
     path('usuarios/login/', views.login_view, name='login'),
