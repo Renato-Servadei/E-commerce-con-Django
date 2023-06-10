@@ -52,6 +52,10 @@ class ShippingAddressDeleteView(LoginRequiredMixin, SuccessMessageMixin, DeleteV
             return redirect('shipping_addresses:shipping_addresses')
         if request.user.id != self.get_object().user_id:
             return redirect('index')
+        #esto es para que no se pueda eliminar la direccion que esta asociada a una orden
+        if self.get_object().has_orders():
+            return redirect('shipping_addresses:shipping_addresses')
+
         return super(ShippingAddressDeleteView, self).dispatch(request, *args, **kwargs)
 
 @login_required(login_url='login')
