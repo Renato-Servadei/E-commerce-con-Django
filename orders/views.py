@@ -10,8 +10,19 @@ def order(request):
     cart = get_or_create_cart(request)
     order = get_or_create_order(cart, request)
     
-    
     return render(request, 'orders/order.html', 
                   {'order': order, 
                    'cart': cart,
                    'breadcrumb': breadcrumb()})
+
+@login_required(login_url='login')
+def address(request):
+    cart = get_or_create_cart(request)
+    order = get_or_create_order(cart, request)
+    shipping_address = order.shipping_address
+
+    return render(request, 'orders/address.html', {
+        'order': order,
+        'cart': cart,
+        'breadcrumb': breadcrumb(address=True)
+    })
