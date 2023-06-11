@@ -1,10 +1,11 @@
-from carts.utils import get_or_create_cart
+from carts.utils import get_or_create_cart, destroy_cart
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404, redirect, render
 
 from shipping_addresses.models import ShippingAddress
 from .models import Order
-from .utils import get_or_create_order, breadcrumb
+from .utils import get_or_create_order, breadcrumb, destroy_order
 
 @login_required(login_url='login')
 def order(request):
@@ -70,3 +71,17 @@ def confirm(request):
         'breadcrumb': breadcrumb(confirmation=True),
         'shipping_address': shipping_address
     })
+
+@login_required(login_url='login')
+def cancel(request):
+    cart = get_or_create_cart(request)
+    order = get_or_create_order(cart, request)
+
+    if request.user.id != order.user.id:
+        return redirect('index')
+    order.cancel()
+    destroy_cart(request)
+    destroy_order(request)
+    
+    messages.error(request, 'Orden cancelada')
+    return  redirect('index')

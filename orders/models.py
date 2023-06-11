@@ -27,6 +27,10 @@ class Order(models.Model):
     def __str__(self):
         return self.order_id
     
+    def cancel(self):
+        self.status = OrderStatus.CANCELLED
+        self.save()
+    
     def get_or_set_shipping_address(self):
         if self.shipping_address:
             return self.shipping_address
