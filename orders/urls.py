@@ -10,4 +10,5 @@ urlpatterns = [
     path('establecer/direccion/<int:pk>', views.check_address, name='check_address'),
     path('confirmar', views.confirm, name='confirm'),
     path('cancelar', views.cancel, name='cancel'),
+    path('completar', views.complete, name='complete'),
 ]

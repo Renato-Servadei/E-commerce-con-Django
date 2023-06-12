@@ -31,6 +31,10 @@ class Order(models.Model):
         self.status = OrderStatus.CANCELLED
         self.save()
     
+    def complete(self):
+        self.status = OrderStatus.COMPLETED
+        self.save()
+    
     def get_or_set_shipping_address(self):
         if self.shipping_address:
             return self.shipping_address
